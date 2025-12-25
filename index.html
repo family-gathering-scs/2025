@@ -1617,26 +1617,10 @@
             }
 
 function handleViewGalleryClick() {
-    const folderId = 'ID_FOLDER_ANDA';
-    const webUrl = `https://drive.google.com/drive/folders/${1yppVKpUk0nFlqaYR0lbBvGevD}`;
-    const userAgent = navigator.userAgent || navigator.vendor;
-
-    // iOS (Universal Link)
-    if (/iPad|iPhone|iPod/.test(userAgent)) {
-        window.location.href = webUrl;
-        return;
-    }
-
-    // Android (Intent)
-    if (/android/i.test(userAgent)) {
-        window.location.href =
-            `intent://drive.google.com/drive/folders/${folderId}` +
-            `#Intent;scheme=https;package=com.google.android.apps.docs;end`;
-        return;
-    }
-
-    // Desktop fallback
-    window.open(webUrl, '_blank');
+    window.open(
+      'https://drive.google.com/drive/folders/1yppVKpUk0nFlqaYR0lbBvGevD-zMf2lN?usp=sharing',
+      '_blank'
+    );
 }
 
             function handleVisibilityChange() {
