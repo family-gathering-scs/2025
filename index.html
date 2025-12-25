@@ -901,6 +901,11 @@
            RESPONSIVE DESIGN
            ============================================ */
         
+        /* Small phones (LG G4 and similar) */
+        @media screen and (max-width: 360px) {
+            .content {
+                padding: var(--spacing-sm);
+            }
             
             .folder-icon {
                 width: 60px;
@@ -938,7 +943,7 @@
         }
 
         /* Medium phones */
-@media screen and (min-width: 390px) and (max-width: 480px) {
+        @media screen and (min-width: 361px) and (max-width: 480px) {
             .content {
                 padding: var(--spacing-md);
             }
@@ -984,8 +989,7 @@
         }
 
         /* Landscape orientation adjustments */
-@media screen and (orientation: landscape) and (max-height: 430px) {
-
+        @media screen and (orientation: landscape) and (max-height: 500px) {
             .content {
                 padding: var(--spacing-sm);
             }
